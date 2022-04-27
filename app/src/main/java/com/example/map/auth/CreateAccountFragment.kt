@@ -3,13 +3,14 @@ package com.example.map.auth
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.map.R
 import com.example.map.Repositories
 import com.example.map.databinding.FragmentCreateAccountBinding
 import com.example.map.model.account.SignUpData
 import com.example.map.utils.viewModelCreator
 
-class CreateAccountFragment : Fragment() {
+class CreateAccountFragment : Fragment(R.layout.fragment_create_account) {
 
     private lateinit var binding: FragmentCreateAccountBinding
     private val viewModel: CreateAccountViewModel by viewModelCreator {
@@ -49,7 +50,8 @@ class CreateAccountFragment : Fragment() {
     }
 
     private fun goToTabsFragment(){
-        // TODO
+        val directions = CreateAccountFragmentDirections.actionCreateAccountFragmentToTabsFragment()
+        findNavController().navigate(directions)
     }
 
     private fun onCreateAccountClick(){
