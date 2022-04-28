@@ -3,6 +3,9 @@ package com.example.map
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.NavigationUI
+import com.example.map.R
 import com.example.map.databinding.FragmentTabsBinding
 
 class TabsFragment : Fragment(R.layout.fragment_tabs) {
@@ -12,6 +15,8 @@ class TabsFragment : Fragment(R.layout.fragment_tabs) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentTabsBinding.bind(view)
 
-        // TODO
+        val navHost = childFragmentManager.findFragmentById(R.id.tabsContainer) as NavHostFragment
+        val navController = navHost.navController
+        NavigationUI.setupWithNavController(binding.bottomNavigation, navController)
     }
 }
