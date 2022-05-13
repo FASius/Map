@@ -3,7 +3,6 @@ package com.example.map.auth
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
 import com.example.map.R
 import com.example.map.Repositories
 import com.example.map.databinding.FragmentSignInBinding
@@ -53,13 +52,11 @@ class SignInFragment : Fragment(R.layout.fragment_sign_in) {
     }
 
     private fun goToTabsFragment(){
-        val directions = SignInFragmentDirections.actionSignInFragmentToTabsFragment()
-        findNavController().navigate(directions)
+        // TODO
     }
 
     private fun onCreateAccountClick(){
-        val directions = SignInFragmentDirections.actionSignInFragmentToCreateAccountFragment()
-        findNavController().navigate(directions)
+        // TODO
     }
 
     private fun onSignInClick(){
