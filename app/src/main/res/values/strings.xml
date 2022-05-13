@@ -12,25 +12,4 @@
     <string name="profile_fragment">Profile</string>
     <string name="map_fragment">Map</string>
     <string name="settings_fragment">Settings</string>
-    <string name="edit_profile">Edit Profile</string>
-    <string name="change_password">Change Password</string>
-    <string name="about">About</string>
-    <string name="logout">Logout</string>
-    <string name="ok_button">OK</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="new_password">New password</string>
-    <string name="old_password">Old password</string>
-    <string name="save">Save</string>
-    <string name="no_check_ins">No check ins</string>
-    <string name="user_location">user location</string>
-    <string name="user_id">user id</string>
-    <string name="default_place">Default place</string>
-    <string name="date_default">Dec 21 2012 21:32</string>
-    <string name="more_button_description">more</string>
-    <string name="location_image_description">location icon</string>
-    <string name="menu_edit">Edit</string>
-    <string name="menu_delete">Delete</string>
-    <string name="no_description">No description</string>
-    <string name="post_check_in">Post</string>
 </resources>
