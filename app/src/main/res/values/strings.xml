@@ -9,7 +9,4 @@
     <string name="account_is_not_created">Email is not correct</string>
     <string name="password_mismatch">Password is not correct</string>
     <string name="account_already_created">Account already created</string>
-    <string name="profile_fragment">Profile</string>
-    <string name="map_fragment">Map</string>
-    <string name="settings_fragment">Settings</string>
 </resources>
